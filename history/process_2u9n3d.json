@@ -1,0 +1,131 @@
+[{
+  "history_id" : "gyagjwgcc8i",
+  "history_input" : "from plot_utilities import *\nfrom install_dependencies import *\n\ndf_bed = pd.read_csv('https://github.com/GatorGlaciology/GStatSim/raw/main/demos/data/greenland_test_data.csv')\ndf_bed = df_bed[df_bed['Bed'] <= 700]\ndf_bed.head()\nsplot2D(df=df_bed, title='Subglacial topography data')",
+  "history_output" : "",
+  "history_begin_time" : 1676532149542,
+  "history_end_time" : 1676532156158,
+  "history_notes" : null,
+  "history_process" : "2u9n3d",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "0rsdfio6kdq",
+  "history_input" : "from plot_utilities import *\nfrom install_dependencies import *\n\ndf_bed = pd.read_csv('https://github.com/GatorGlaciology/GStatSim/raw/main/demos/data/greenland_test_data.csv')\ndf_bed = df_bed[df_bed['Bed'] <= 700]\ndf_bed.head()\nsplot2D(df=df_bed, title='Subglacial topography data')",
+  "history_output" : "",
+  "history_begin_time" : 1676532008244,
+  "history_end_time" : 1676532014834,
+  "history_notes" : null,
+  "history_process" : "2u9n3d",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "kaqzuip39ft",
+  "history_input" : "from plot_utilities import *\nfrom install_dependencies import *\n\ndf_bed = pd.read_csv('https://github.com/GatorGlaciology/GStatSim/raw/main/demos/data/greenland_test_data.csv')\ndf_bed = df_bed[df_bed['Bed'] <= 700]\ndf_bed.head()\nsplot2D(df=df_bed, title='Subglacial topography data')",
+  "history_output" : "",
+  "history_begin_time" : 1676531932243,
+  "history_end_time" : 1676531979690,
+  "history_notes" : null,
+  "history_process" : "2u9n3d",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "h76n1xhxwkg",
+  "history_input" : "from plot_utilities import *\nfrom install_dependencies import *\n\ndf_bed = pd.read_csv('https://github.com/GatorGlaciology/GStatSim/raw/main/demos/data/greenland_test_data.csv')\ndf_bed = df_bed[df_bed['Bed'] <= 700]\ndf_bed.head()\nsplot2D(df=df_bed, title='Subglacial topography data')",
+  "history_output" : "",
+  "history_begin_time" : 1676531745031,
+  "history_end_time" : 1676531757436,
+  "history_notes" : null,
+  "history_process" : "2u9n3d",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "t35hhi107um",
+  "history_input" : "from plot_utilities import *\nfrom install_dependencies import *\n\ndf_bed = pd.read_csv('https://github.com/GatorGlaciology/GStatSim/raw/main/demos/data/greenland_test_data.csv')\ndf_bed = df_bed[df_bed['Bed'] <= 700]\ndf_bed.head()\nsplot2D(df=df_bed, title='Subglacial topography data')",
+  "history_output" : "",
+  "history_begin_time" : 1676531596353,
+  "history_end_time" : 1676531607928,
+  "history_notes" : null,
+  "history_process" : "2u9n3d",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "dw8wlp758nr",
+  "history_input" : "from plot_utilities import *\nfrom install_dependencies import *\n\ndf_bed = pd.read_csv('https://github.com/GatorGlaciology/GStatSim/raw/main/demos/data/greenland_test_data.csv')\ndf_bed = df_bed[df_bed['Bed'] <= 700]\ndf_bed.head()\nsplot2D(df=df_bed, title='Subglacial topography data')",
+  "history_output" : "",
+  "history_begin_time" : 1676531148692,
+  "history_end_time" : 1676531160505,
+  "history_notes" : null,
+  "history_process" : "2u9n3d",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "7ln6hd3ydxt",
+  "history_input" : "from plot_utilities import *\nfrom install_dependencies import *\n\ndf_bed = pd.read_csv('https://github.com/GatorGlaciology/GStatSim/raw/main/demos/data/greenland_test_data.csv')\ndf_bed = df_bed[df_bed['Bed'] <= 700]\ndf_bed.head()\nsplot2D(df=df_bed, title='Subglacial topography data')",
+  "history_output" : "",
+  "history_begin_time" : 1676530945986,
+  "history_end_time" : 1676530957898,
+  "history_notes" : null,
+  "history_process" : "2u9n3d",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "xwh7tfrw9l8",
+  "history_input" : "from plot_utilities import *\nfrom install_dependencies import *\n\ndf_bed = pd.read_csv('https://github.com/GatorGlaciology/GStatSim/raw/main/demos/data/greenland_test_data.csv')\ndf_bed = df_bed[df_bed['Bed'] <= 700]\ndf_bed.head()\nsplot2D(df=df_bed, title='Subglacial topography data')",
+  "history_output" : "",
+  "history_begin_time" : 1676530826437,
+  "history_end_time" : 1676530838776,
+  "history_notes" : null,
+  "history_process" : "2u9n3d",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "31yyrsipsf6",
+  "history_input" : "from plot_utilities import *\nfrom install_dependencies import *\n\ndf_bed = pd.read_csv('https://github.com/GatorGlaciology/GStatSim/raw/main/demos/data/greenland_test_data.csv')\ndf_bed = df_bed[df_bed['Bed'] <= 700]\ndf_bed.head()\nsplot2D(df=df_bed, title='Subglacial topography data')",
+  "history_output" : "",
+  "history_begin_time" : 1676530705864,
+  "history_end_time" : 1676530724497,
+  "history_notes" : null,
+  "history_process" : "2u9n3d",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "1sl3vkdea5l",
+  "history_input" : "from plot_utilities import *\nfrom install_dependencies import *\n\ndf_bed = pd.read_csv('https://github.com/GatorGlaciology/GStatSim/raw/main/demos/data/greenland_test_data.csv')\ndf_bed = df_bed[df_bed['Bed'] <= 700]\ndf_bed.head()\nsplot2D(df=df_bed, title='Subglacial topography data')",
+  "history_output" : "",
+  "history_begin_time" : 1676530465966,
+  "history_end_time" : 1676530487693,
+  "history_notes" : null,
+  "history_process" : "2u9n3d",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "9v8tnbbdvue",
+  "history_input" : "from plot_utlities import *\nfrom install_dependencies import *\n\ndf_bed = pd.read_csv('https://github.com/GatorGlaciology/GStatSim/raw/main/demos/data/greenland_test_data.csv')\ndf_bed = df_bed[df_bed['Bed'] <= 700]\ndf_bed.head()\nsplot2D(df=df_bed, title='Subglacial topography data')",
+  "history_output" : "Traceback (most recent call last):\n  File \"/Users/gokulprathin/gw-workspace/9v8tnbbdvue/subglacial_topography_plot.py\", line 1, in <module>\n    from plot_utlities import *\nModuleNotFoundError: No module named 'plot_utlities'\n",
+  "history_begin_time" : 1676530418479,
+  "history_end_time" : 1676530418563,
+  "history_notes" : null,
+  "history_process" : "2u9n3d",
+  "host_id" : "100001",
+  "indicator" : "Failed"
+},{
+  "history_id" : "0coes24sibp",
+  "history_input" : "df_bed = pd.read_csv('https://github.com/GatorGlaciology/GStatSim/raw/main/demos/data/greenland_test_data.csv')\ndf_bed = df_bed[df_bed['Bed'] <= 700]\ndf_bed.head()\nsplot2D(df=df_bed, title='Subglacial topography data')",
+  "history_output" : "Traceback (most recent call last):\n  File \"/Users/gokulprathin/gw-workspace/0coes24sibp/subglacial_topography_plot.py\", line 1, in <module>\n    df_bed = pd.read_csv('https://github.com/GatorGlaciology/GStatSim/raw/main/demos/data/greenland_test_data.csv')\nNameError: name 'pd' is not defined\n",
+  "history_begin_time" : 1676530349775,
+  "history_end_time" : 1676530349854,
+  "history_notes" : null,
+  "history_process" : "2u9n3d",
+  "host_id" : "100001",
+  "indicator" : "Failed"
+},{
+  "history_id" : "wt7ikyu821l",
+  "history_input" : null,
+  "history_output" : null,
+  "history_begin_time" : null,
+  "history_end_time" : 1676531118653,
+  "history_notes" : null,
+  "history_process" : "2u9n3d",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},]

@@ -1,0 +1,131 @@
+[{
+  "history_id" : "7qtc2y5uekw",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\nfrom subglacial_topography_plot import df_bed\n\nres = 1000\ndf_grid, grid_matrix, rows, cols = gs.Gridding.grid_data(df_bed, 'X', 'Y', 'Bed', res)\n# plot gridded bed\nfig, ax = plt.subplots(1, figsize=(5,5))\nim = plt.imshow(grid_matrix, cmap='gist_earth', vmin=-400, vmax=600,\n                interpolation='none', origin='upper')\nplt.title('Gridded topography')\nplt.xlabel('X [px]'); plt.ylabel('Y [px]')\n\n# make color bar\ncbar = make_colorbar(fig, im, -400, 600, 'Bed [m]')\n\nax.axis('scaled')\nplt.savefig(f'{uuid.uuid4().hex}.png')\n# plt.show()\n",
+  "history_output" : "",
+  "history_begin_time" : 1676532157468,
+  "history_end_time" : 1676532166212,
+  "history_notes" : null,
+  "history_process" : "oikovr",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "4m5weei3sr7",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\nfrom subglacial_topography_plot import df_bed\n\nres = 1000\ndf_grid, grid_matrix, rows, cols = gs.Gridding.grid_data(df_bed, 'X', 'Y', 'Bed', res)\n# plot gridded bed\nfig, ax = plt.subplots(1, figsize=(5,5))\nim = plt.imshow(grid_matrix, cmap='gist_earth', vmin=-400, vmax=600,\n                interpolation='none', origin='upper')\nplt.title('Gridded topography')\nplt.xlabel('X [px]'); plt.ylabel('Y [px]')\n\n# make color bar\ncbar = make_colorbar(fig, im, -400, 600, 'Bed [m]')\n\nax.axis('scaled')\nplt.savefig(f'{uuid.uuid4().hex}.png')\n# plt.show()\n",
+  "history_output" : "",
+  "history_begin_time" : 1676532016362,
+  "history_end_time" : 1676532025036,
+  "history_notes" : null,
+  "history_process" : "oikovr",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "dl36ba3q22c",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\nfrom subglacial_topography_plot import df_bed\n\nres = 1000\ndf_grid, grid_matrix, rows, cols = gs.Gridding.grid_data(df_bed, 'X', 'Y', 'Bed', res)\n# plot gridded bed\nfig, ax = plt.subplots(1, figsize=(5,5))\nim = plt.imshow(grid_matrix, cmap='gist_earth', vmin=-400, vmax=600,\n                interpolation='none', origin='upper')\nplt.title('Gridded topography')\nplt.xlabel('X [px]'); plt.ylabel('Y [px]')\n\n# make color bar\ncbar = make_colorbar(fig, im, -400, 600, 'Bed [m]')\n\nax.axis('scaled')\nplt.savefig(f'{uuid.uuid4().hex}.png')\n# plt.show()\n",
+  "history_output" : "",
+  "history_begin_time" : 1676531947319,
+  "history_end_time" : 1676531979690,
+  "history_notes" : null,
+  "history_process" : "oikovr",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "fpmj0u7gqcd",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\nfrom subglacial_topography_plot import df_bed\n\nres = 1000\ndf_grid, grid_matrix, rows, cols = gs.Gridding.grid_data(df_bed, 'X', 'Y', 'Bed', res)\n# plot gridded bed\nfig, ax = plt.subplots(1, figsize=(5,5))\nim = plt.imshow(grid_matrix, cmap='gist_earth', vmin=-400, vmax=600,\n                interpolation='none', origin='upper')\nplt.title('Gridded topography')\nplt.xlabel('X [px]'); plt.ylabel('Y [px]')\n\n# make color bar\ncbar = make_colorbar(fig, im, -400, 600, 'Bed [m]')\n\nax.axis('scaled')\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()\n",
+  "history_output" : "",
+  "history_begin_time" : 1676531759160,
+  "history_end_time" : 1676531773995,
+  "history_notes" : null,
+  "history_process" : "oikovr",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "eys6zje23n9",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\nfrom subglacial_topography_plot import df_bed\n\nres = 1000\ndf_grid, grid_matrix, rows, cols = gs.Gridding.grid_data(df_bed, 'X', 'Y', 'Bed', res)\n# plot gridded bed\nfig, ax = plt.subplots(1, figsize=(5,5))\nim = plt.imshow(grid_matrix, cmap='gist_earth', vmin=-400, vmax=600,\n                interpolation='none', origin='upper')\nplt.title('Gridded topography')\nplt.xlabel('X [px]'); plt.ylabel('Y [px]')\n\n# make color bar\ncbar = make_colorbar(fig, im, -400, 600, 'Bed [m]')\n\nax.axis('scaled')\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()\n",
+  "history_output" : "",
+  "history_begin_time" : 1676531609661,
+  "history_end_time" : 1676531623803,
+  "history_notes" : null,
+  "history_process" : "oikovr",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "3k9clfwmu7z",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\nfrom subglacial_topography_plot import df_bed\n\nres = 1000\ndf_grid, grid_matrix, rows, cols = gs.Gridding.grid_data(df_bed, 'X', 'Y', 'Bed', res)\n# plot gridded bed\nfig, ax = plt.subplots(1, figsize=(5,5))\nim = plt.imshow(grid_matrix, cmap='gist_earth', vmin=-400, vmax=600,\n                interpolation='none', origin='upper')\nplt.title('Gridded topography')\nplt.xlabel('X [px]'); plt.ylabel('Y [px]')\n\n# make color bar\ncbar = make_colorbar(fig, im, -400, 600, 'Bed [m]')\n\nax.axis('scaled')\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()\n",
+  "history_output" : "",
+  "history_begin_time" : 1676531162264,
+  "history_end_time" : 1676531176915,
+  "history_notes" : null,
+  "history_process" : "oikovr",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "kebkphlsvep",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\nfrom subglacial_topography_plot import df_bed\n\nres = 1000\ndf_grid, grid_matrix, rows, cols = gs.Gridding.grid_data(df_bed, 'X', 'Y', 'Bed', res)\n# plot gridded bed\nfig, ax = plt.subplots(1, figsize=(5,5))\nim = plt.imshow(grid_matrix, cmap='gist_earth', vmin=-400, vmax=600,\n                interpolation='none', origin='upper')\nplt.title('Gridded topography')\nplt.xlabel('X [px]'); plt.ylabel('Y [px]')\n\n# make color bar\ncbar = make_colorbar(fig, im, -400, 600, 'Bed [m]')\n\nax.axis('scaled')\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()\n",
+  "history_output" : "",
+  "history_begin_time" : 1676530959024,
+  "history_end_time" : 1676530973724,
+  "history_notes" : null,
+  "history_process" : "oikovr",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "zk68jug18vf",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\nfrom subglacial_topography_plot import df_bed\n\nres = 1000\ndf_grid, grid_matrix, rows, cols = gs.Gridding.grid_data(df_bed, 'X', 'Y', 'Bed', res)\n# plot gridded bed\nfig, ax = plt.subplots(1, figsize=(5,5))\nim = plt.imshow(grid_matrix, cmap='gist_earth', vmin=-400, vmax=600,\n                interpolation='none', origin='upper')\nplt.title('Gridded topography')\nplt.xlabel('X [px]'); plt.ylabel('Y [px]')\n\n# make color bar\ncbar = make_colorbar(fig, im, -400, 600, 'Bed [m]')\n\nax.axis('scaled')\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()\n",
+  "history_output" : "",
+  "history_begin_time" : 1676530840572,
+  "history_end_time" : 1676530857102,
+  "history_notes" : null,
+  "history_process" : "oikovr",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "q547tzzto7q",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\n\nres = 1000\ndf_grid, grid_matrix, rows, cols = gs.Gridding.grid_data(df_bed, 'X', 'Y', 'Bed', res)\n# plot gridded bed\nfig, ax = plt.subplots(1, figsize=(5,5))\nim = plt.imshow(grid_matrix, cmap='gist_earth', vmin=-400, vmax=600,\n                interpolation='none', origin='upper')\nplt.title('Gridded topography')\nplt.xlabel('X [px]'); plt.ylabel('Y [px]')\n\n# make color bar\ncbar = make_colorbar(fig, im, -400, 600, 'Bed [m]')\n\nax.axis('scaled')\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()\n",
+  "history_output" : "Traceback (most recent call last):\n  File \"/Users/gokulprathin/gw-workspace/q547tzzto7q/gridded_topography.py\", line 6, in <module>\n    df_grid, grid_matrix, rows, cols = gs.Gridding.grid_data(df_bed, 'X', 'Y', 'Bed', res)\nNameError: name 'df_bed' is not defined\n",
+  "history_begin_time" : 1676530726023,
+  "history_end_time" : 1676530728739,
+  "history_notes" : null,
+  "history_process" : "oikovr",
+  "host_id" : "100001",
+  "indicator" : "Failed"
+},{
+  "history_id" : "50ytwhikmzp",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\n\nres = 1000\ndf_grid, grid_matrix, rows, cols = gs.Gridding.grid_data(df_bed, 'X', 'Y', 'Bed', res)\n# plot gridded bed\nfig, ax = plt.subplots(1, figsize=(5,5))\nim = plt.imshow(grid_matrix, cmap='gist_earth', vmin=-400, vmax=600,\n                interpolation='none', origin='upper')\nplt.title('Gridded topography')\nplt.xlabel('X [px]'); plt.ylabel('Y [px]')\n\n# make color bar\ncbar = make_colorbar(fig, im, -400, 600, 'Bed [m]')\n\nax.axis('scaled')\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()\n",
+  "history_output" : "Traceback (most recent call last):\n  File \"/Users/gokulprathin/gw-workspace/50ytwhikmzp/gridded_topography.py\", line 6, in <module>\n    df_grid, grid_matrix, rows, cols = gs.Gridding.grid_data(df_bed, 'X', 'Y', 'Bed', res)\nNameError: name 'df_bed' is not defined\n",
+  "history_begin_time" : 1676530489609,
+  "history_end_time" : 1676530492163,
+  "history_notes" : null,
+  "history_process" : "oikovr",
+  "host_id" : "100001",
+  "indicator" : "Failed"
+},{
+  "history_id" : "5blkxvmgv72",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\n\nres = 1000\ndf_grid, grid_matrix, rows, cols = gs.Gridding.grid_data(df_bed, 'X', 'Y', 'Bed', res)\n# plot gridded bed\nfig, ax = plt.subplots(1, figsize=(5,5))\nim = plt.imshow(grid_matrix, cmap='gist_earth', vmin=-400, vmax=600,\n                interpolation='none', origin='upper')\nplt.title('Gridded topography')\nplt.xlabel('X [px]'); plt.ylabel('Y [px]')\n\n# make color bar\ncbar = make_colorbar(fig, im, -400, 600, 'Bed [m]')\n\nax.axis('scaled')\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()\n",
+  "history_output" : "Traceback (most recent call last):\n  File \"/Users/gokulprathin/gw-workspace/5blkxvmgv72/gridded_topography.py\", line 6, in <module>\n    df_grid, grid_matrix, rows, cols = gs.Gridding.grid_data(df_bed, 'X', 'Y', 'Bed', res)\nNameError: name 'df_bed' is not defined\n",
+  "history_begin_time" : 1676530420455,
+  "history_end_time" : 1676530422860,
+  "history_notes" : null,
+  "history_process" : "oikovr",
+  "host_id" : "100001",
+  "indicator" : "Failed"
+},{
+  "history_id" : "u62gr1z9l9o",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\n\nres = 1000\ndf_grid, grid_matrix, rows, cols = gs.Gridding.grid_data(df_bed, 'X', 'Y', 'Bed', res)\n# plot gridded bed\nfig, ax = plt.subplots(1, figsize=(5,5))\nim = plt.imshow(grid_matrix, cmap='gist_earth', vmin=-400, vmax=600,\n                interpolation='none', origin='upper')\nplt.title('Gridded topography')\nplt.xlabel('X [px]'); plt.ylabel('Y [px]')\n\n# make color bar\ncbar = make_colorbar(fig, im, -400, 600, 'Bed [m]')\n\nax.axis('scaled')\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()\n",
+  "history_output" : "Traceback (most recent call last):\n  File \"/Users/gokulprathin/gw-workspace/u62gr1z9l9o/gridded_topography.py\", line 6, in <module>\n    df_grid, grid_matrix, rows, cols = gs.Gridding.grid_data(df_bed, 'X', 'Y', 'Bed', res)\nNameError: name 'df_bed' is not defined\n",
+  "history_begin_time" : 1676530351760,
+  "history_end_time" : 1676530354221,
+  "history_notes" : null,
+  "history_process" : "oikovr",
+  "host_id" : "100001",
+  "indicator" : "Failed"
+},{
+  "history_id" : "f2ct8ciou4f",
+  "history_input" : null,
+  "history_output" : null,
+  "history_begin_time" : null,
+  "history_end_time" : 1676531118654,
+  "history_notes" : null,
+  "history_process" : "oikovr",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},]

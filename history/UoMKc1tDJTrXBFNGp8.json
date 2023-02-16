@@ -1,0 +1,51 @@
+[{
+  "history_id" : "9m9crwezjb6",
+  "history_input" : "import numpy as np\nimport pandas as pd\nimport skgstat as skg\nfrom sklearn.preprocessing import QuantileTransformer\nimport matplotlib.pyplot as plt\nimport gstatsim as gs\n\n# plot utility functions\nfrom plot_utilities import *",
+  "history_output" : "",
+  "history_begin_time" : 1676531115234,
+  "history_end_time" : 1676531118652,
+  "history_notes" : null,
+  "history_process" : "6z5it4",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "h5clqxf7m2r",
+  "history_input" : "import uuid\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom mpl_toolkits.axes_grid1 import make_axes_locatable\nfrom matplotlib.colors import LightSource\n\n\ndef make_colorbar(fig, im, vmin, vmax, clabel, ax=None):\n    if ax is None:\n        ax = plt.gca()\n    divider = make_axes_locatable(ax)\n    cax = divider.append_axes('right', size='5%', pad=0.1)\n    cbar = plt.colorbar(im, ticks=np.linspace(vmin, vmax, 11), cax=cax)\n    cbar.set_label(clabel, rotation=270, labelpad=15)\n    return cbar\n\n\ndef splot2D(df, title, xlabel='X [m]', ylabel='Y [m]', clabel='Bed [m]', x='X', y='Y', c='Bed',\n            vmin=-400, vmax=600, s=0.5):\n    fig, ax = plt.subplots(1, figsize=(5, 5))\n    im = plt.scatter(df[x], df[y], c=df[c], vmin=vmin, vmax=vmax,\n                     marker='.', s=s, cmap='gist_earth')\n    plt.title(title)\n    plt.xlabel(xlabel);\n    plt.ylabel(ylabel)\n    plt.locator_params(nbins=5)\n\n    # make colorbar\n    cbar = make_colorbar(fig, im, vmin, vmax, clabel)\n\n    ax.axis('scaled')\n    plt.savefig(f'{uuid.uuid4().hex}.png')\n    plt.show()\n\n\ndef mplot1(Pred_grid_xy, sim, rows, cols, title, xlabel='X [m]', ylabel='Y [m]',\n           clabel='Bed [m]', vmin=-400, vmax=600, hillshade=False, titlepad=None):\n    x_mat = Pred_grid_xy[:, 0].reshape((rows, cols))\n    y_mat = Pred_grid_xy[:, 1].reshape((rows, cols))\n    mat = sim.reshape((rows, cols))\n\n    xmin = Pred_grid_xy[:, 0].min();\n    xmax = Pred_grid_xy[:, 0].max()\n    ymin = Pred_grid_xy[:, 1].min();\n    ymax = Pred_grid_xy[:, 1].max()\n\n    cmap = plt.get_cmap('gist_earth')\n\n    fig, ax = plt.subplots(1, figsize=(5, 5))\n    im = plt.pcolormesh(x_mat, y_mat, mat, vmin=vmin, vmax=vmax, cmap=cmap)\n\n    if hillshade == True:\n        # Shade from the northeast, with the sun 45 degrees from horizontal\n        ls = LightSource(azdeg=45, altdeg=45)\n\n        # leaving the dx and dy as 1 means a vertical exageration equal to dx/dy\n        hillshade = ls.hillshade(mat, vert_exag=1, dx=1, dy=1, fraction=1.0)\n        plt.pcolormesh(x_mat, y_mat, hillshade, cmap='gray', alpha=0.1)\n\n    if titlepad is None:\n        plt.title(title)\n    else:\n        plt.title(title, pad=titlepad)\n    plt.xlabel(xlabel);\n    plt.ylabel(ylabel)\n    plt.xticks(np.linspace(xmin, xmax, 5))\n    plt.yticks(np.linspace(ymin, ymax, 5))\n\n    # make colorbar\n    if hillshade is False:\n        cbar = make_colorbar(fig, im, vmin, vmax, clabel)\n\n    ax.axis('scaled')\n    plt.savefig(f'{uuid.uuid4().hex}.png')\n    plt.show()\n\n\ndef mplot2_std(Pred_grid_xy, pred, std, rows, cols, title1, title2):\n    x_mat = Pred_grid_xy[:, 0].reshape((rows, cols))\n    y_mat = Pred_grid_xy[:, 1].reshape((rows, cols))\n    pred_mat = pred.reshape((rows, cols))\n    std_mat = std.reshape((rows, cols))\n\n    xmin = Pred_grid_xy[:, 0].min();\n    xmax = Pred_grid_xy[:, 0].max()\n    ymin = Pred_grid_xy[:, 1].min();\n    ymax = Pred_grid_xy[:, 1].max()\n\n    fig, [ax1, ax2] = plt.subplots(1, 2, figsize=(10, 5))\n\n    im = ax1.pcolormesh(x_mat, y_mat, pred_mat, vmin=-400, vmax=600, cmap='gist_earth')\n    ax1.set_xticks(np.linspace(xmin, xmax, 5))\n    ax1.set_yticks(np.linspace(ymin, ymax, 5))\n    ax1.set_title(title1)\n    ax1.set_xlabel('X [m]');\n    ax1.set_ylabel('Y [m]')\n    ax1.axis('scaled')\n\n    # make colorbar\n    cbar = make_colorbar(fig, im, -400, 600, 'Bed [m]', ax=ax1)\n\n    im = ax2.pcolormesh(x_mat, y_mat, std_mat, vmin=0, vmax=150, cmap='gist_earth')\n    ax2.set_xticks(np.linspace(xmin, xmax, 5))\n    ax2.set_yticks(np.linspace(ymin, ymax, 5))\n    ax2.set_title(title2)\n    ax2.set_xlabel('X [m]');\n    ax2.set_ylabel('Y [m]')\n    ax2.axis('scaled')\n\n    # make colorbar\n    cbar = make_colorbar(fig, im, 0, 150, 'Bed [m]', ax=ax2)\n\n    plt.tight_layout()\n    plt.savefig(f'{uuid.uuid4().hex}.png')\n    plt.show()\n\n\ndef mplot2_hillshade(Pred_grid_xy, sim1, sim2, rows, cols, title1, title2):\n    x_mat = Pred_grid_xy[:, 0].reshape((rows, cols))\n    y_mat = Pred_grid_xy[:, 1].reshape((rows, cols))\n    sim1_mat = sim1.reshape((rows, cols))\n    sim2_mat = sim2.reshape((rows, cols))\n\n    xmin = Pred_grid_xy[:, 0].min();\n    xmax = Pred_grid_xy[:, 0].max()\n    ymin = Pred_grid_xy[:, 1].min();\n    ymax = Pred_grid_xy[:, 1].max()\n\n    plots = [sim1_mat, sim2_mat]\n    titles = [title1, title2]\n\n    fig, axs = plt.subplots(1, 2, figsize=(10, 5))\n\n    for i, (ax, plot) in enumerate(zip(axs, plots)):\n        ax.pcolormesh(x_mat, y_mat, plot, vmin=-400, vmax=600, cmap='gist_earth')\n\n        # Shade from the northeast, with the sun 45 degrees from horizontal\n        ls = LightSource(azdeg=45, altdeg=45)\n\n        # leaving the dx and dy as 1 means a vertical exageration equal to dx/dy\n        hillshade = ls.hillshade(plot, vert_exag=1, dx=1, dy=1, fraction=1.0)\n        ax.pcolormesh(x_mat, y_mat, hillshade, cmap='gray', alpha=0.1)\n\n        ax.set_title(f'{titles[i]}')\n        ax.set_xlabel('X [m]')\n        if i == 0:\n            ax.set_ylabel('Y [m]')\n        ax.set_xticks(np.linspace(xmin, xmax, 5))\n        ax.set_yticks(np.linspace(ymin, ymax, 5))\n        ax.axis('scaled')\n\n    plt.tight_layout()\n    plt.savefig(f'{uuid.uuid4().hex}.png')\n    plt.show()\n",
+  "history_output" : "",
+  "history_begin_time" : 1676531111797,
+  "history_end_time" : 1676531118652,
+  "history_notes" : null,
+  "history_process" : "vzrekq",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "wt7ikyu821l",
+  "history_input" : null,
+  "history_output" : null,
+  "history_begin_time" : null,
+  "history_end_time" : 1676531118653,
+  "history_notes" : null,
+  "history_process" : "2u9n3d",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "f2ct8ciou4f",
+  "history_input" : null,
+  "history_output" : null,
+  "history_begin_time" : null,
+  "history_end_time" : 1676531118654,
+  "history_notes" : null,
+  "history_process" : "oikovr",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "egj5i6xit4a",
+  "history_input" : null,
+  "history_output" : null,
+  "history_begin_time" : null,
+  "history_end_time" : 1676531118654,
+  "history_notes" : null,
+  "history_process" : "r5qlro",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+}]

@@ -1,0 +1,51 @@
+[{
+  "history_id" : "u76rh6qqt0n",
+  "history_input" : "from normal_score_transformation import *\nsplot2D(df=df_grid, title='Transformed bed data', c='Nbed', vmin=-3, vmax=3, s=5)",
+  "history_output" : "/Users/gokulprathin/gw-workspace/u76rh6qqt0n/normal_score_transformation.py:12: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df_grid['Nbed'] = nst_trans.transform(data)\n",
+  "history_begin_time" : 1676532179260,
+  "history_end_time" : 1676532188293,
+  "history_notes" : null,
+  "history_process" : "hyf9o1",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "0yqtgehk0d9",
+  "history_input" : "from normal_score_transformation import *\nsplot2D(df=df_grid, title='Transformed bed data', c='Nbed', vmin=-3, vmax=3, s=5)",
+  "history_output" : "/Users/gokulprathin/gw-workspace/0yqtgehk0d9/normal_score_transformation.py:12: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df_grid['Nbed'] = nst_trans.transform(data)\n",
+  "history_begin_time" : 1676532037090,
+  "history_end_time" : 1676532046154,
+  "history_notes" : null,
+  "history_process" : "hyf9o1",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "z3ayocltizx",
+  "history_input" : "from normal_score_transformation import *\nsplot2D(df=df_grid, title='Transformed bed data', c='Nbed', vmin=-3, vmax=3, s=5)",
+  "history_output" : "/Users/gokulprathin/gw-workspace/z3ayocltizx/normal_score_transformation.py:12: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df_grid['Nbed'] = nst_trans.transform(data)\n",
+  "history_begin_time" : 1676531794082,
+  "history_end_time" : 1676531810599,
+  "history_notes" : null,
+  "history_process" : "hyf9o1",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "a06eimcbc8k",
+  "history_input" : "from normal_score_transformation import *\nsplot2D(df=df_grid, title='Transformed bed data', c='Nbed', vmin=-3, vmax=3, s=5)",
+  "history_output" : "/Users/gokulprathin/gw-workspace/a06eimcbc8k/normal_score_transformation.py:12: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df_grid['Nbed'] = nst_trans.transform(data)\n",
+  "history_begin_time" : 1676531642888,
+  "history_end_time" : 1676531659097,
+  "history_notes" : null,
+  "history_process" : "hyf9o1",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "3oor0ct00ln",
+  "history_input" : null,
+  "history_output" : null,
+  "history_begin_time" : null,
+  "history_end_time" : 1676531979693,
+  "history_notes" : null,
+  "history_process" : "hyf9o1",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},]

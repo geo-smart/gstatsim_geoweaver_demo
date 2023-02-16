@@ -1,0 +1,51 @@
+[{
+  "history_id" : "u0hxw83lbiu",
+  "history_input" : "from normal_score_transformation import *\n\n# compute experimental (isotropic) variogram\ncoords = df_grid[['X','Y']].values\nvalues = df_grid['Nbed']\n\nmaxlag = 50000      # maximum range distance\nn_lags = 70         # num of bins\n\n# compute variogram\nV1 = skg.Variogram(coords, values, bin_func='even', n_lags=n_lags, maxlag=maxlag, normalize=False)\n\n# extract variogram values\nxdata = V1.bins\nydata = V1.experimental\n\nplt.figure(figsize=(6,4))\nplt.scatter(xdata, ydata, s=12, c='g')\nplt.title('Isotropic Experimental Variogram')\nplt.xlabel('Lag (m)'); plt.ylabel('Semivariance')\nplt.savefig(f'{uuid.uuid4().hex}.png')\n# plt.show()",
+  "history_output" : "/Users/gokulprathin/gw-workspace/u0hxw83lbiu/normal_score_transformation.py:12: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df_grid['Nbed'] = nst_trans.transform(data)\n",
+  "history_begin_time" : 1676532189406,
+  "history_end_time" : 1676532200107,
+  "history_notes" : null,
+  "history_process" : "a9jrs1",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "bgzaypjgm2v",
+  "history_input" : "from normal_score_transformation import *\n\n# compute experimental (isotropic) variogram\ncoords = df_grid[['X','Y']].values\nvalues = df_grid['Nbed']\n\nmaxlag = 50000      # maximum range distance\nn_lags = 70         # num of bins\n\n# compute variogram\nV1 = skg.Variogram(coords, values, bin_func='even', n_lags=n_lags, maxlag=maxlag, normalize=False)\n\n# extract variogram values\nxdata = V1.bins\nydata = V1.experimental\n\nplt.figure(figsize=(6,4))\nplt.scatter(xdata, ydata, s=12, c='g')\nplt.title('Isotropic Experimental Variogram')\nplt.xlabel('Lag (m)'); plt.ylabel('Semivariance')\nplt.savefig(f'{uuid.uuid4().hex}.png')\n# plt.show()",
+  "history_output" : "/Users/gokulprathin/gw-workspace/bgzaypjgm2v/normal_score_transformation.py:12: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df_grid['Nbed'] = nst_trans.transform(data)\n",
+  "history_begin_time" : 1676532047832,
+  "history_end_time" : 1676532058342,
+  "history_notes" : null,
+  "history_process" : "a9jrs1",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "dptbdv8sb1b",
+  "history_input" : "from normal_score_transformation import *\n\n# compute experimental (isotropic) variogram\ncoords = df_grid[['X','Y']].values\nvalues = df_grid['Nbed']\n\nmaxlag = 50000      # maximum range distance\nn_lags = 70         # num of bins\n\n# compute variogram\nV1 = skg.Variogram(coords, values, bin_func='even', n_lags=n_lags, maxlag=maxlag, normalize=False)\n\n# extract variogram values\nxdata = V1.bins\nydata = V1.experimental\n\nplt.figure(figsize=(6,4))\nplt.scatter(xdata, ydata, s=12, c='g')\nplt.title('Isotropic Experimental Variogram')\nplt.xlabel('Lag (m)'); plt.ylabel('Semivariance')\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()",
+  "history_output" : "/Users/gokulprathin/gw-workspace/dptbdv8sb1b/normal_score_transformation.py:12: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df_grid['Nbed'] = nst_trans.transform(data)\n",
+  "history_begin_time" : 1676531812193,
+  "history_end_time" : 1676532086924,
+  "history_notes" : null,
+  "history_process" : "a9jrs1",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "9cenxjw7djz",
+  "history_input" : "from normal_score_transformation import *\n\n# compute experimental (isotropic) variogram\ncoords = df_grid[['X','Y']].values\nvalues = df_grid['Nbed']\n\nmaxlag = 50000      # maximum range distance\nn_lags = 70         # num of bins\n\n# compute variogram\nV1 = skg.Variogram(coords, values, bin_func='even', n_lags=n_lags, maxlag=maxlag, normalize=False)\n\n# extract variogram values\nxdata = V1.bins\nydata = V1.experimental\n\nplt.figure(figsize=(6,4))\nplt.scatter(xdata, ydata, s=12, c='g')\nplt.title('Isotropic Experimental Variogram')\nplt.xlabel('Lag (m)'); plt.ylabel('Semivariance')\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()",
+  "history_output" : "/Users/gokulprathin/gw-workspace/9cenxjw7djz/normal_score_transformation.py:12: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df_grid['Nbed'] = nst_trans.transform(data)\n",
+  "history_begin_time" : 1676531660179,
+  "history_end_time" : 1676531694557,
+  "history_notes" : null,
+  "history_process" : "a9jrs1",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "2tfzbfp6o7i",
+  "history_input" : null,
+  "history_output" : null,
+  "history_begin_time" : null,
+  "history_end_time" : 1676531979694,
+  "history_notes" : null,
+  "history_process" : "a9jrs1",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},]
