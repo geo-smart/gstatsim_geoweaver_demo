@@ -1,0 +1,101 @@
+[{
+  "history_id" : "9f1s5yholy6",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\nfrom gridded_topography_plot import *\n\ndf_grid.X.min(), df_grid.X.max()\ndf_grid = df_grid[df_grid['Z'].isnull() == False]\ndf_grid.head()\n\ndata = df_grid['Z'].values.reshape(-1,1)\nnst_trans = QuantileTransformer(n_quantiles=500, output_distribution='normal').fit(data)\ndf_grid['Nbed'] = nst_trans.transform(data) \n\nplt.subplot(121)\nplt.hist(df_grid['Z'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-700,700]); \nplt.xlabel('Elevation [m]'); plt.ylabel('Frequency'); plt.title('Raw bed elevation')\nplt.grid(True)\n\n# plot normal score bed histogram (with weights)\nplt.subplot(122)\nplt.hist(df_grid['Nbed'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-3.5,3.5]); \nplt.xlabel('Normalized elevation'); plt.ylabel('Frequency'); plt.title('Normalized elevation')\nplt.grid(True)\nplt.subplots_adjust(left=0.0, bottom=0.0, right=1.8, top=1.0, wspace=0.2, hspace=0.3)\nplt.savefig(f'{uuid.uuid4().hex}.png')\n# plt.show()",
+  "history_output" : "/Users/gokulprathin/gw-workspace/9f1s5yholy6/normal_score_transformation.py:12: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df_grid['Nbed'] = nst_trans.transform(data)\n",
+  "history_begin_time" : 1676532168224,
+  "history_end_time" : 1676532177357,
+  "history_notes" : null,
+  "history_process" : "r5qlro",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "ngxrasmai17",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\nfrom gridded_topography_plot import *\n\ndf_grid.X.min(), df_grid.X.max()\ndf_grid = df_grid[df_grid['Z'].isnull() == False]\ndf_grid.head()\n\ndata = df_grid['Z'].values.reshape(-1,1)\nnst_trans = QuantileTransformer(n_quantiles=500, output_distribution='normal').fit(data)\ndf_grid['Nbed'] = nst_trans.transform(data) \n\nplt.subplot(121)\nplt.hist(df_grid['Z'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-700,700]); \nplt.xlabel('Elevation [m]'); plt.ylabel('Frequency'); plt.title('Raw bed elevation')\nplt.grid(True)\n\n# plot normal score bed histogram (with weights)\nplt.subplot(122)\nplt.hist(df_grid['Nbed'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-3.5,3.5]); \nplt.xlabel('Normalized elevation'); plt.ylabel('Frequency'); plt.title('Normalized elevation')\nplt.grid(True)\nplt.subplots_adjust(left=0.0, bottom=0.0, right=1.8, top=1.0, wspace=0.2, hspace=0.3)\nplt.savefig(f'{uuid.uuid4().hex}.png')\n# plt.show()",
+  "history_output" : "/Users/gokulprathin/gw-workspace/ngxrasmai17/normal_score_transformation.py:12: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df_grid['Nbed'] = nst_trans.transform(data)\n",
+  "history_begin_time" : 1676532026894,
+  "history_end_time" : 1676532035766,
+  "history_notes" : null,
+  "history_process" : "r5qlro",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "a565qahqmgf",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\nfrom gridded_topography_plot import *\n\ndf_grid.X.min(), df_grid.X.max()\ndf_grid = df_grid[df_grid['Z'].isnull() == False]\ndf_grid.head()\n\ndata = df_grid['Z'].values.reshape(-1,1)\nnst_trans = QuantileTransformer(n_quantiles=500, output_distribution='normal').fit(data)\ndf_grid['Nbed'] = nst_trans.transform(data) \n\nplt.subplot(121)\nplt.hist(df_grid['Z'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-700,700]); \nplt.xlabel('Elevation [m]'); plt.ylabel('Frequency'); plt.title('Raw bed elevation')\nplt.grid(True)\n\n# plot normal score bed histogram (with weights)\nplt.subplot(122)\nplt.hist(df_grid['Nbed'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-3.5,3.5]); \nplt.xlabel('Normalized elevation'); plt.ylabel('Frequency'); plt.title('Normalized elevation')\nplt.grid(True)\nplt.subplots_adjust(left=0.0, bottom=0.0, right=1.8, top=1.0, wspace=0.2, hspace=0.3)\nplt.savefig(f'{uuid.uuid4().hex}.png')\n# plt.show()",
+  "history_output" : "/Users/gokulprathin/gw-workspace/a565qahqmgf/normal_score_transformation.py:12: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df_grid['Nbed'] = nst_trans.transform(data)\n",
+  "history_begin_time" : 1676531964279,
+  "history_end_time" : 1676531979692,
+  "history_notes" : null,
+  "history_process" : "r5qlro",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},{
+  "history_id" : "pczgbgyzl1h",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\nfrom gridded_topography_plot import *\n\ndf_grid.X.min(), df_grid.X.max()\ndf_grid = df_grid[df_grid['Z'].isnull() == False]\ndf_grid.head()\n\ndata = df_grid['Z'].values.reshape(-1,1)\nnst_trans = QuantileTransformer(n_quantiles=500, output_distribution='normal').fit(data)\ndf_grid['Nbed'] = nst_trans.transform(data) \n\nplt.subplot(121)\nplt.hist(df_grid['Z'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-700,700]); \nplt.xlabel('Elevation [m]'); plt.ylabel('Frequency'); plt.title('Raw bed elevation')\nplt.grid(True)\n\n# plot normal score bed histogram (with weights)\nplt.subplot(122)\nplt.hist(df_grid['Nbed'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-3.5,3.5]); \nplt.xlabel('Normalized elevation'); plt.ylabel('Frequency'); plt.title('Normalized elevation')\nplt.grid(True)\nplt.subplots_adjust(left=0.0, bottom=0.0, right=1.8, top=1.0, wspace=0.2, hspace=0.3)\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()",
+  "history_output" : "/Users/gokulprathin/gw-workspace/pczgbgyzl1h/normal_score_transformation.py:12: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df_grid['Nbed'] = nst_trans.transform(data)\n",
+  "history_begin_time" : 1676531775502,
+  "history_end_time" : 1676531792104,
+  "history_notes" : null,
+  "history_process" : "r5qlro",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "eh5weqk3exd",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\nfrom gridded_topography_plot import *\n\ndf_grid.X.min(), df_grid.X.max()\ndf_grid = df_grid[df_grid['Z'].isnull() == False]\ndf_grid.head()\n\ndata = df_grid['Z'].values.reshape(-1,1)\nnst_trans = QuantileTransformer(n_quantiles=500, output_distribution='normal').fit(data)\ndf_grid['Nbed'] = nst_trans.transform(data) \n\nplt.subplot(121)\nplt.hist(df_grid['Z'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-700,700]); \nplt.xlabel('Elevation [m]'); plt.ylabel('Frequency'); plt.title('Raw bed elevation')\nplt.grid(True)\n\n# plot normal score bed histogram (with weights)\nplt.subplot(122)\nplt.hist(df_grid['Nbed'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-3.5,3.5]); \nplt.xlabel('Normalized elevation'); plt.ylabel('Frequency'); plt.title('Normalized elevation')\nplt.grid(True)\nplt.subplots_adjust(left=0.0, bottom=0.0, right=1.8, top=1.0, wspace=0.2, hspace=0.3)\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()",
+  "history_output" : "/Users/gokulprathin/gw-workspace/eh5weqk3exd/normal_score_transformation.py:12: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df_grid['Nbed'] = nst_trans.transform(data)\n",
+  "history_begin_time" : 1676531625003,
+  "history_end_time" : 1676531641090,
+  "history_notes" : null,
+  "history_process" : "r5qlro",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "lfa06ld9kb7",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\nfrom gridded_topography_plot import *\n\ndf_grid.X.min(), df_grid.X.max()\ndf_grid = df_grid[df_grid['Z'].isnull() == False]\ndf_grid.head()\n\ndata = df_grid['Z'].values.reshape(-1,1)\nnst_trans = QuantileTransformer(n_quantiles=500, output_distribution='normal').fit(data)\ndf_grid['Nbed'] = nst_trans.transform(data) \n\nplt.subplot(121)\nplt.hist(df_grid['Z'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-700,700]); \nplt.xlabel('Elevation [m]'); plt.ylabel('Frequency'); plt.title('Raw bed elevation')\nplt.grid(True)\n\n# plot normal score bed histogram (with weights)\nplt.subplot(122)\nplt.hist(df_grid['Nbed'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-3.5,3.5]); \nplt.xlabel('Normalized elevation'); plt.ylabel('Frequency'); plt.title('Normalized elevation')\nplt.grid(True)\nplt.subplots_adjust(left=0.0, bottom=0.0, right=1.8, top=1.0, wspace=0.2, hspace=0.3)\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()",
+  "history_output" : "/Users/gokulprathin/gw-workspace/lfa06ld9kb7/normal_score_transformation.py:12: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df_grid['Nbed'] = nst_trans.transform(data)\n",
+  "history_begin_time" : 1676531178585,
+  "history_end_time" : 1676531194467,
+  "history_notes" : null,
+  "history_process" : "r5qlro",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "eftpi8q2ul7",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\nfrom gridded_topography_plot import *\n\ndf_grid.X.min(), df_grid.X.max()\ndf_grid = df_grid[df_grid['Z'].isnull() == False]\ndf_grid.head()\n\ndata = df_grid['Z'].values.reshape(-1,1)\nnst_trans = QuantileTransformer(n_quantiles=500, output_distribution='normal').fit(data)\ndf_grid['Nbed'] = nst_trans.transform(data) \n\nplt.subplot(121)\nplt.hist(df_grid['Z'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-700,700]); \nplt.xlabel('Elevation [m]'); plt.ylabel('Frequency'); plt.title('Raw bed elevation')\nplt.grid(True)\n\n# plot normal score bed histogram (with weights)\nplt.subplot(122)\nplt.hist(df_grid['Nbed'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-3.5,3.5]); \nplt.xlabel('Normalized elevation'); plt.ylabel('Frequency'); plt.title('Normalized elevation')\nplt.grid(True)\nplt.subplots_adjust(left=0.0, bottom=0.0, right=1.8, top=1.0, wspace=0.2, hspace=0.3)\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()",
+  "history_output" : "/Users/gokulprathin/gw-workspace/eftpi8q2ul7/normal_score_transformation.py:12: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df_grid['Nbed'] = nst_trans.transform(data)\n",
+  "history_begin_time" : 1676530974969,
+  "history_end_time" : 1676530992349,
+  "history_notes" : null,
+  "history_process" : "r5qlro",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "1vgm6yf5lrj",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\n\ndf_grid.X.min(), df_grid.X.max()\ndf_grid = df_grid[df_grid['Z'].isnull() == False]\ndf_grid.head()\n\ndata = df_grid['Z'].values.reshape(-1,1)\nnst_trans = QuantileTransformer(n_quantiles=500, output_distribution='normal').fit(data)\ndf_grid['Nbed'] = nst_trans.transform(data) \n\nplt.subplot(121)\nplt.hist(df_grid['Z'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-700,700]); \nplt.xlabel('Elevation [m]'); plt.ylabel('Frequency'); plt.title('Raw bed elevation')\nplt.grid(True)\n\n# plot normal score bed histogram (with weights)\nplt.subplot(122)\nplt.hist(df_grid['Nbed'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-3.5,3.5]); \nplt.xlabel('Normalized elevation'); plt.ylabel('Frequency'); plt.title('Normalized elevation')\nplt.grid(True)\nplt.subplots_adjust(left=0.0, bottom=0.0, right=1.8, top=1.0, wspace=0.2, hspace=0.3)\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()",
+  "history_output" : "Traceback (most recent call last):\n  File \"/Users/gokulprathin/gw-workspace/1vgm6yf5lrj/normal_score_transformation.py\", line 5, in <module>\n    df_grid.X.min(), df_grid.X.max()\nNameError: name 'df_grid' is not defined\n",
+  "history_begin_time" : 1676530858877,
+  "history_end_time" : 1676530861441,
+  "history_notes" : null,
+  "history_process" : "r5qlro",
+  "host_id" : "100001",
+  "indicator" : "Failed"
+},{
+  "history_id" : "0zohuku4ldf",
+  "history_input" : "import uuid\nfrom install_dependencies import *\nfrom plot_utilities import *\n\ndf_grid.X.min(), df_grid.X.max()\ndf_grid = df_grid[df_grid['Z'].isnull() == False]\ndf_grid.head()\n\ndata = df_grid['Z'].values.reshape(-1,1)\nnst_trans = QuantileTransformer(n_quantiles=500, output_distribution='normal').fit(data)\ndf_grid['Nbed'] = nst_trans.transform(data) \n\nplt.subplot(121)\nplt.hist(df_grid['Z'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-700,700]); \nplt.xlabel('Elevation [m]'); plt.ylabel('Frequency'); plt.title('Raw bed elevation')\nplt.grid(True)\n\n# plot normal score bed histogram (with weights)\nplt.subplot(122)\nplt.hist(df_grid['Nbed'], facecolor='red', bins=50, alpha=0.2, edgecolor='black')\nplt.xlim([-3.5,3.5]); \nplt.xlabel('Normalized elevation'); plt.ylabel('Frequency'); plt.title('Normalized elevation')\nplt.grid(True)\nplt.subplots_adjust(left=0.0, bottom=0.0, right=1.8, top=1.0, wspace=0.2, hspace=0.3)\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()",
+  "history_output" : "Traceback (most recent call last):\n  File \"/Users/gokulprathin/gw-workspace/0zohuku4ldf/normal_score_transformation.py\", line 5, in <module>\n    df_grid.X.min(), df_grid.X.max()\nNameError: name 'df_grid' is not defined\n",
+  "history_begin_time" : 1676530730533,
+  "history_end_time" : 1676530732931,
+  "history_notes" : null,
+  "history_process" : "r5qlro",
+  "host_id" : "100001",
+  "indicator" : "Failed"
+},{
+  "history_id" : "egj5i6xit4a",
+  "history_input" : null,
+  "history_output" : null,
+  "history_begin_time" : null,
+  "history_end_time" : 1676531118654,
+  "history_notes" : null,
+  "history_process" : "r5qlro",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},]

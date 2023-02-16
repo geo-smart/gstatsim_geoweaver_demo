@@ -1,0 +1,51 @@
+[{
+  "history_id" : "pgjifptjl7q",
+  "history_input" : "from plot_utilities import *\nfrom install_dependencies import *\nfrom isotropic_experimental_variogram import *\n\nV0 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \n                                  maxlag = maxlag, normalize=False, azimuth=0, tolerance=15)\n\nV45 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \n                                  maxlag = maxlag, normalize=False, azimuth=45, tolerance=15)\n\nV90 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \n                                   maxlag = maxlag, normalize=False, azimuth=90, tolerance=15)\n\nV135 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \n                                  maxlag = maxlag, normalize=False, azimuth=135, tolerance=15)\n\nx0 = V0.bins\ny0 = V0.experimental\n\nx45 = V45.bins\ny45 = V45.experimental\n\nx90 = V90.bins\ny90 = V90.experimental\n\nx135 = V135.bins\ny135 = V135.experimental\n\nplt.figure(figsize=(6,4))\nplt.scatter(x0, y0, s=12, label='0 degrees (East-West)')\nplt.scatter(x45, y45,s=12, c='g', label='45 degrees')\nplt.scatter(x90, y90, s=12, c='r', label='90 degrees')\nplt.scatter(x135, y135, s=12, c='k', label='135 degrees')\nplt.title('Anisotropoic experimental variogram')\nplt.xlabel('Lag [m]'); plt.ylabel('Semivariance')\nplt.legend(loc='lower right')\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()",
+  "history_output" : "/Users/gokulprathin/gw-workspace/pgjifptjl7q/normal_score_transformation.py:12: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df_grid['Nbed'] = nst_trans.transform(data)\n",
+  "history_begin_time" : 1676532201358,
+  "history_end_time" : 1676532264645,
+  "history_notes" : null,
+  "history_process" : "8hyi80",
+  "host_id" : "100001",
+  "indicator" : "Done"
+},{
+  "history_id" : "498jxg8z2u7",
+  "history_input" : "from plot_utilities import *\nfrom install_dependencies import *\n\nV0 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \n                                  maxlag = maxlag, normalize=False, azimuth=0, tolerance=15)\n\nV45 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \n                                  maxlag = maxlag, normalize=False, azimuth=45, tolerance=15)\n\nV90 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \n                                   maxlag = maxlag, normalize=False, azimuth=90, tolerance=15)\n\nV135 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \n                                  maxlag = maxlag, normalize=False, azimuth=135, tolerance=15)\n\nx0 = V0.bins\ny0 = V0.experimental\n\nx45 = V45.bins\ny45 = V45.experimental\n\nx90 = V90.bins\ny90 = V90.experimental\n\nx135 = V135.bins\ny135 = V135.experimental\n\nplt.figure(figsize=(6,4))\nplt.scatter(x0, y0, s=12, label='0 degrees (East-West)')\nplt.scatter(x45, y45,s=12, c='g', label='45 degrees')\nplt.scatter(x90, y90, s=12, c='r', label='90 degrees')\nplt.scatter(x135, y135, s=12, c='k', label='135 degrees')\nplt.title('Anisotropoic experimental variogram')\nplt.xlabel('Lag [m]'); plt.ylabel('Semivariance')\nplt.legend(loc='lower right')\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()",
+  "history_output" : "Traceback (most recent call last):\n  File \"/Users/gokulprathin/gw-workspace/498jxg8z2u7/anisotropoic_experimental_variogram.py\", line 4, in <module>\n    V0 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \nNameError: name 'coords' is not defined\n",
+  "history_begin_time" : 1676532088462,
+  "history_end_time" : 1676532091261,
+  "history_notes" : null,
+  "history_process" : "8hyi80",
+  "host_id" : "100001",
+  "indicator" : "Failed"
+},{
+  "history_id" : "raw6igkf4pe",
+  "history_input" : "from plot_utilities import *\nfrom install_dependencies import *\n\nV0 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \n                                  maxlag = maxlag, normalize=False, azimuth=0, tolerance=15)\n\nV45 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \n                                  maxlag = maxlag, normalize=False, azimuth=45, tolerance=15)\n\nV90 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \n                                   maxlag = maxlag, normalize=False, azimuth=90, tolerance=15)\n\nV135 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \n                                  maxlag = maxlag, normalize=False, azimuth=135, tolerance=15)\n\nx0 = V0.bins\ny0 = V0.experimental\n\nx45 = V45.bins\ny45 = V45.experimental\n\nx90 = V90.bins\ny90 = V90.experimental\n\nx135 = V135.bins\ny135 = V135.experimental\n\nplt.figure(figsize=(6,4))\nplt.scatter(x0, y0, s=12, label='0 degrees (East-West)')\nplt.scatter(x45, y45,s=12, c='g', label='45 degrees')\nplt.scatter(x90, y90, s=12, c='r', label='90 degrees')\nplt.scatter(x135, y135, s=12, c='k', label='135 degrees')\nplt.title('Anisotropoic experimental variogram')\nplt.xlabel('Lag [m]'); plt.ylabel('Semivariance')\nplt.legend(loc='lower right')\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()",
+  "history_output" : "Traceback (most recent call last):\n  File \"/Users/gokulprathin/gw-workspace/raw6igkf4pe/anisotropoic_experimental_variogram.py\", line 4, in <module>\n    V0 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \nNameError: name 'coords' is not defined\n",
+  "history_begin_time" : 1676532060217,
+  "history_end_time" : 1676532062608,
+  "history_notes" : null,
+  "history_process" : "8hyi80",
+  "host_id" : "100001",
+  "indicator" : "Failed"
+},{
+  "history_id" : "au9pxd3cc8u",
+  "history_input" : "V0 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \n                                  maxlag = maxlag, normalize=False, azimuth=0, tolerance=15)\n\nV45 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \n                                  maxlag = maxlag, normalize=False, azimuth=45, tolerance=15)\n\nV90 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \n                                   maxlag = maxlag, normalize=False, azimuth=90, tolerance=15)\n\nV135 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \n                                  maxlag = maxlag, normalize=False, azimuth=135, tolerance=15)\n\nx0 = V0.bins\ny0 = V0.experimental\n\nx45 = V45.bins\ny45 = V45.experimental\n\nx90 = V90.bins\ny90 = V90.experimental\n\nx135 = V135.bins\ny135 = V135.experimental\n\nplt.figure(figsize=(6,4))\nplt.scatter(x0, y0, s=12, label='0 degrees (East-West)')\nplt.scatter(x45, y45,s=12, c='g', label='45 degrees')\nplt.scatter(x90, y90, s=12, c='r', label='90 degrees')\nplt.scatter(x135, y135, s=12, c='k', label='135 degrees')\nplt.title('Anisotropoic experimental variogram')\nplt.xlabel('Lag [m]'); plt.ylabel('Semivariance')\nplt.legend(loc='lower right')\nplt.savefig(f'{uuid.uuid4().hex}.png')\nplt.show()",
+  "history_output" : "Traceback (most recent call last):\n  File \"/Users/gokulprathin/gw-workspace/au9pxd3cc8u/anisotropoic_experimental_variogram.py\", line 1, in <module>\n    V0 = skg.DirectionalVariogram(coords, values, bin_func = \"even\", n_lags = n_lags, \nNameError: name 'skg' is not defined\n",
+  "history_begin_time" : 1676531696240,
+  "history_end_time" : 1676531696319,
+  "history_notes" : null,
+  "history_process" : "8hyi80",
+  "host_id" : "100001",
+  "indicator" : "Failed"
+},{
+  "history_id" : "wythpkanimc",
+  "history_input" : null,
+  "history_output" : null,
+  "history_begin_time" : null,
+  "history_end_time" : 1676531979695,
+  "history_notes" : null,
+  "history_process" : "8hyi80",
+  "host_id" : "100001",
+  "indicator" : "Stopped"
+},]
